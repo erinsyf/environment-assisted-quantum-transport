@@ -18,37 +18,37 @@ The main question:
 
 The system is represented as a finite network of coupled sites with Hamiltonian
 
-\[
+$$
 H =
 \sum_i \epsilon_i |i\rangle\langle i|
 +
 \sum_{i\neq j} V_{ij}|i\rangle\langle j|,
-\]
+$$
 
 where
 
-- \(\epsilon_i\) represents the energy of site \(i\),
-- \(V_{ij}\) represents coherent coupling between sites \(i\) and \(j\),
-- energetic disorder is introduced through variations in \(\epsilon_i\).
+- $\epsilon_i$ represents the energy of site $i$,
+- $V_{ij}$ represents coherent coupling between sites $i$ and $j$,
+- energetic disorder is introduced through variations in $\epsilon_i$.
 
 For the numerical model, long-range interactions are approximated using a power-law relation:
 
-\[
+$$
 V_{ij} =
 \frac{V_{\max}}{|i-j|^\alpha}.
-\]
+$$
 
 The density matrix evolves according to an open-system master equation,
 
-\[
+$$
 \frac{d\rho}{dt}
 =
 -i[H,\rho]
 +
 \mathcal{D}(\rho),
-\]
+$$
 
-where \(\mathcal{D}(\rho)\) describes environmental decoherence and extraction (set leakage rate) from the network.
+where $\mathcal{D}(\rho)$ describes environmental decoherence and extraction (set leakage rate) from the network.
 
 ## Numerical Simulation
 
@@ -84,19 +84,19 @@ These limits provide intuition for when environmental interactions enhance trans
 
 The important competition can be summarized as
 
-\[
+$$
 \text{disorder}
 \rightarrow
 \text{localization}
-\]
+$$
 
 while moderate environmental interactions can disrupt localization:
 
-\[
+$$
 \text{localization}
 \xrightarrow{\text{moderate decoherence}}
 \text{enhanced transport}.
-\]
+$$
 
 However, sufficiently strong environmental interaction suppresses useful coherent dynamics.
 
