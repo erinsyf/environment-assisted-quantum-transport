@@ -14,7 +14,7 @@ $$
 H =
 \sum_i E_i |i\rangle\langle i|
 +
-\sum_{i\neq j} V_{ij}|i\rangle\langle j|,
+\sum_{i\neq j} V_{ij}|i\rangle\langle j|
 $$
 
 where:
@@ -55,13 +55,13 @@ Population is extracted at leakage rate $\gamma_l$.
 
 So the output-site population therefore contains the loss term 
 $
--\gamma_l \rho_{oo},
+-\gamma_l \rho_{oo}
 $
 
 while coherences in off diagonal terms coupled to the output site decay as
 
 $
--\frac{\gamma_l}{2}\rho_{oj}.
+-\frac{\gamma_l}{2}\rho_{oj}
 $
 
 ## Simulation Modes
