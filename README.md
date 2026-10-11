@@ -45,7 +45,7 @@ $$
 =
 -i[H,\rho]
 +
-\mathcal{D}(\rho),
+\mathcal{D}(\rho)
 $$
 
 where $\mathcal{D}(\rho)$ describes environmental decoherence and extraction (set leakage rate) from the network.
