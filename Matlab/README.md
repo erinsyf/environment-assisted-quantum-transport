@@ -31,33 +31,21 @@ Energetic disorder can be introduced by assigning different values to the site e
 The density matrix evolves according to the Lindblad master equation. The coherent part is constructed element-by-element from
 
 $$
-\dot{\rho}_{ij}
-=
--i\sum_k H_{ik}\rho_{kj}
-+
-i\sum_k \rho_{ik}H_{kj}.
+\dot{\rho}_{ij} = -i\sum_k H_{ik}\rho_{kj} + i\sum_k \rho_{ik}H_{kj}
 $$
 
-The density matrix is row-vectorized as
-
-$$
-(\rho_{11},\rho_{12},\ldots,\rho_{1N},
-\rho_{21},\ldots,\rho_{NN})^T,
-$$
-
-and the resulting equations are stored in an $N^2\times N^2$ Liouvillian matrix.
+and the resulting equations are stored in an $N^2\times N^2$ Liouvillian matrix, 
+after vectorising the density matrix.
 
 ## Environmental Dephasing
 
 Pure dephasing suppresses off-diagonal density-matrix elements while leaving populations unchanged directly.
 
-For $i\neq j$,
+For $i\neq j$, the off diagonal components gain a term: 
 
-$$
-\dot{\rho}_{ij}
-\supset
--\gamma_d \rho_{ij},
-$$
+$
+-\gamma_d \rho_{ij}
+$
 
 where $\gamma_d$ is the dephasing rate.
 
@@ -65,21 +53,16 @@ where $\gamma_d$ is the dephasing rate.
 
 Population is extracted at leakage rate $\gamma_l$.
 
-So the output-site population therefore contains the loss term
-
-$$
-\dot{\rho}_{oo}
-\supset
+So the output-site population therefore contains the loss term 
+$
 -\gamma_l \rho_{oo},
-$$
+$
 
 while coherences in off diagonal terms coupled to the output site decay as
 
-$$
-\dot{\rho}_{oj}
-\supset
+$
 -\frac{\gamma_l}{2}\rho_{oj}.
-$$
+$
 
 ## Simulation Modes
 
