@@ -41,11 +41,7 @@ $$
 The density matrix evolves according to an open-system master equation,
 
 $$
-\frac{d\rho}{dt}
-=
--i[H,\rho]
-+
-\mathcal{D}(\rho)
+\frac{d\rho}{dt} = -i\[H,\rho\] + \mathcal{D}(\rho)
 $$
 
 where $\mathcal{D}(\rho)$ describes environmental decoherence and extraction (set leakage rate) from the network.
@@ -90,13 +86,7 @@ $$
 \text{localization}
 $$
 
-while moderate environmental interactions can disrupt localization:
-
-$$
-\text{localization}
-\xrightarrow{\text{moderate decoherence}}
-\text{enhanced transport}.
-$$
+while moderate environmental interactions can disrupt localization and enhance transport.
 
 However, sufficiently strong environmental interaction suppresses useful coherent dynamics.
 
