@@ -43,9 +43,7 @@ Pure dephasing suppresses off-diagonal density-matrix elements while leaving pop
 
 For $i\neq j$, the off diagonal components gain a term: 
 
-$
--\gamma_d \rho_{ij}
-$
+$-\gamma_d \rho_{ij}$
 
 where $\gamma_d$ is the dephasing rate.
 
@@ -54,15 +52,11 @@ where $\gamma_d$ is the dephasing rate.
 Population is extracted at leakage rate $\gamma_l$.
 
 So the output-site population therefore contains the loss term 
-$
--\gamma_l \rho_{oo}
-$
+$-\gamma_l\rho_{oo}$
 
 while coherences in off diagonal terms coupled to the output site decay as
 
-$
--\frac{\gamma_l}{2}\rho_{oj}
-$
+$-\frac{\gamma_l}{2}\rho_{oj}$
 
 ## Simulation Modes
 
